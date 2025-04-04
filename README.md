@@ -14,7 +14,7 @@ This repository contains the pipeline used to analyze calcium imaging data from 
 ## Repository Contents
 
 - `matlab_demodulation_script.m`: Demodulates raw .lvm files and calculates dF/F
-- `FiberPhotometryAnalysisTool/`: GUI-based tool for analyzing calcium dynamics 
+- `FiberPhotometryAnalysisTool/`: GUI-based tool for analyzing calcium dynamics (adapted from https://github.com/prejwal-p/FiberPhotometryAnalysisTool)
 - `example_data/`: Sample data for testing the pipeline
 
 ## Usage
