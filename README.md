@@ -1,6 +1,6 @@
 # Fiber Photometry Analysis - Veleanu et al. (2025)
 
-Code and examples for the fiber photometry analysis featured in Figure 3 of [Linking Brain Circuitry and Neural Plasticity in Antidepressant Response: The mPFC-Reuniens-Hippocampus Pathway](https://www.nature.com/articles/s12345-025-12345-6).
+Code and examples for the fiber photometry analysis featured in Figure 3 of [Linking Brain Circuitry and Neural Plasticity in Antidepressant Response: The mPFC-Reuniens-Hippocampus Pathway](https://www.researchsquare.com/article/rs-6348176/v1)).
 
 ## Overview
 
