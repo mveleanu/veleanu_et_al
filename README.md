@@ -9,7 +9,7 @@ This repository contains the pipeline used to analyze calcium imaging data from 
 ## Requirements
 
 - MATLAB (2019b or newer)
-- Python 3.8+ with dependencies listed in `requirements.yml`
+- Python 3.8+ with dependencies listed in `/FiberPhotometryAnalysisTools/requirements.yml`
 
 ## Repository Contents
 
