@@ -46,15 +46,15 @@ D4_92_TST/
 ### 2. Data Analysis
 
 1. Install the analysis tool environment:
-
+```python
 conda env create --name fp_analysis --file=FiberPhotometryAnalysisTool/requirements.yml
 conda activate fp_analysis
-
+```
 2. Launch the GUI: 
-
+```python
 cd FiberPhotometryAnalysisTool
 python main.py
-
+```
 3. In the GUI: 
 
 Click "Add Group" to create experimental groups (e.g., "D4" for Day 4, "D6" for Day 6)
