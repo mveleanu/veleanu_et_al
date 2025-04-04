@@ -11,29 +11,34 @@ This repository contains custom analysis scripts for fiber photometry data used 
 
 ## Requirements
 - Python 3.8+
-- NumPy
-- SciPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter (for notebooks)
+- MATLAB (2019b or newer)
 
-## Installation
-Clone this repository:
-```git clone https://github.com/yourusername/fiber-photometry-analysis```
+## Repository Contents
 
-Install required packages:
-```pip install -r requirements.txt```
+- `matlab_demodulation_script.m`: Demodulates raw .lvm files and calculates dF/F
+- `FiberPhotometryAnalysisTool/`: GUI-based tool for group analysis
+- `fiberphotometry_example_dataset/`: Sample data for testing the pipeline
 
 ## Usage
-Basic example of how to process fiber photometry data:
 
-```python
-import preprocessing as pp
+### 1. Signal Demodulation
 
-# Load data
-data = pp.load_data('path/to/your/data.csv')
+1. Edit `matlab_demodulation_script.m` to set `dirPath` to your .lvm files location
+2. Run the script in MATLAB to process files
 
-# Apply motion correction and dF/F calculation
-corrected_data = pp.motion_correct(data)
-df_f = pp.calculate_df_f(corrected_data)
+The script creates a folder structure containing:
+- Demodulated signal files (_C.csv, _S.csv)
+- dF/F calculations (_dff.csv)
+- Visualization plots
+
+### 2. Data Analysis
+
+1. Install the analysis tool environment:
+```bash
+conda env create --name fp_analysis --file=FiberPhotometryAnalysisTool/requirements.yml
+conda activate fp_analysis
+
+2. Launch the GUI: 
+
+cd FiberPhotometryAnalysisTool
+python main.py
