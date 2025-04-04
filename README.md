@@ -41,6 +41,7 @@ D4_92_TST/
     ├── D4_92_TST.lvm_Periodogram.png
     ├── D4_92_TST.lvm_demodulated.png
     └── D4_92_TST.lvm_DFF.png
+```
 
 ### 2. Data Analysis
 
