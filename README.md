@@ -9,12 +9,12 @@ This repository contains the pipeline used to analyze calcium imaging data from 
 ## Requirements
 
 - MATLAB (2019b or newer)
-- Python 3.8+ with dependencies listed in `/FiberPhotometryAnalysisTools/requirements.yml`
+- Python 3.8+ with dependencies listed in `requirements.yml`
 
 ## Repository Contents
 
 - `matlab_demodulation_script.m`: Demodulates raw .lvm files and calculates dF/F
-- `FiberPhotometryAnalysisTool/`: GUI-based tool for analyzing calcium dynamics (adapted from https://github.com/prejwal-p/FiberPhotometryAnalysisTool)
+- `FiberPhotometryAnalysisTool/`: GUI-based tool for analyzing calcium dynamics 
 - `example_data/`: Sample data for testing the pipeline
 
 ## Usage
@@ -41,20 +41,19 @@ D4_92_TST/
     ├── D4_92_TST.lvm_Periodogram.png
     ├── D4_92_TST.lvm_demodulated.png
     └── D4_92_TST.lvm_DFF.png
-```
 
 ### 2. Data Analysis
 
 1. Install the analysis tool environment:
-```python
+
 conda env create --name fp_analysis --file=FiberPhotometryAnalysisTool/requirements.yml
 conda activate fp_analysis
-```
+
 2. Launch the GUI: 
-```python
+
 cd FiberPhotometryAnalysisTool
 python main.py
-```
+
 3. In the GUI: 
 
 Click "Add Group" to create experimental groups (e.g., "D4" for Day 4, "D6" for Day 6)
