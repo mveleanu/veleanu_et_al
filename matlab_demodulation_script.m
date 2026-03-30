@@ -22,7 +22,7 @@
 clear all
 
 % Define the directory where the .lvm files are located
-dirPath = '<Path_to_Repository>\fiberphotometry_example_dataset\processed';
+dirPath = 'C:\Users\veleanu\Desktop\Revision_Fiber_Demod';
 
 % Get a list of all .lvm files in the directory
 fileList = dir(fullfile(dirPath, '*.lvm'));
@@ -77,8 +77,8 @@ for fileIdx = 1:length(fileList)
         ySig_sub = y1(k:k + N_samples);
         
         % Extract power of harmonic from subvector
-        demodSig.control(l) = bandpower(ySig_sub,Fs,[473 493]);
-        demodSig.green(l) = bandpower(ySig_sub,Fs,[190 210]);
+        demodSig.control(l) = bandpower(ySig_sub,Fs,[198 208]);
+        demodSig.green(l) = bandpower(ySig_sub,Fs,[478 488]);
         
         k = k + N_samples;
     end
